@@ -9,7 +9,7 @@ const data = [
 ]
 
 export const metadata = {
-    metadataBase: new URL(process.env.HOST),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_HOST),
     title: "Contact Me | Get in Touch with Krishika Vyas",
     description: "Have questions or want to collaborate? Reach out to Krishika Vyas, a digital marketing enthusiast. I&apos;m here to help you with SEO, Meta ads, and social media strategies.",
     keywords: ["contact", "get in touch", "digital marketing inquiries", "SEO questions", "Meta ads support", "social media marketing", "Krishika Vyas"],
@@ -18,8 +18,8 @@ export const metadata = {
     openGraph: {
       title: "Contact Me | Get in Touch with Krishika Vyas",
       type: "profile",
-      url: new URL(process.env.HOST),
-      images: [`${new URL(process.env.HOST)}/LOGOO.png`], 
+      url: new URL(process.env.NEXT_PUBLIC_HOST),
+      images: [`${new URL(process.env.NEXT_PUBLIC_HOST)}/LOGOO.png`], 
       description: "Have questions or want to collaborate? Reach out to Krishika Vyas, a digital marketing enthusiast. I&apos;m here to help you with SEO, Meta ads, and social media strategies.",
       card: "summary_large_image",
       locale: "en_US",

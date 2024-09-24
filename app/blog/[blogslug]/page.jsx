@@ -18,7 +18,7 @@ const getData = async (slug) => {
     if(prevData) {
         return prevData.blogs
     }
-    const res = await fetch(`/api/blog?id=${slug}`, {
+    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/blog?id=${slug}`, {
         next: { revalidate: 0 }
     });
 
@@ -67,12 +67,12 @@ export async function generateMetadata({ params: { blogslug } }) {
         description: seo?.description || data.description,
         keywords: seo?.keywords || '',
         alternates: {
-            canonical: seo?.canonical ? `${process.env.HOST}/blog/${seo.canonical}` : `${process.env.HOST}/blog/${data.slug}`,
+            canonical: seo?.canonical ? `${process.env.NEXT_PUBLIC_HOST}/blog/${seo.canonical}` : `${process.env.NEXT_PUBLIC_HOST}/blog/${data.slug}`,
         },
         openGraph: {
             title: `Blog - ${seo.title || data.title}`,
             type: "profile",
-            url: new URL(`${process.env.HOST}/blog/${data.slug}`),
+            url: new URL(`${process.env.NEXT_PUBLIC_HOST}/blog/${data.slug}`),
             images: [data.img], 
             description: seo?.description || data.description,
             card: "summary_large_image",

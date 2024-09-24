@@ -17,7 +17,7 @@ const data = [
 
 
 export const metadata = {
-    metadataBase : new URL(process.env.HOST),
+    metadataBase : new URL(process.env.NEXT_PUBLIC_HOST),
     title: "About Me | SEO & Digital Marketing Enthusiast | Krishika Vyas",
     description: "A passionate digital marketing enthusiast specializing in SEO, Meta ads, and social media strategies. Discover how I help businesses grow online.",
     keywords: ["About me", "SEO enthusiast", "digital marketing professional", "Meta ads strategist", "social media marketing", "online growth", "marketing consultant", "Krishika Vyas"],
@@ -26,8 +26,8 @@ export const metadata = {
     openGraph: {
       title: "About Me | SEO & Digital Marketing Enthusiast | Krishika Vyas",
       type: "profile",
-      url: new URL(process.env.HOST),
-      images: [`${new URL(process.env.HOST)}/LOGOO.png`], 
+      url: new URL(process.env.NEXT_PUBLIC_HOST),
+      images: [`${new URL(process.env.NEXT_PUBLIC_HOST)}/LOGOO.png`], 
       description: "A passionate digital marketing enthusiast specializing in SEO, Meta ads, and social media strategies. Discover how I help businesses grow online.",
       card: "summary_large_image",
       locale: "en_US",

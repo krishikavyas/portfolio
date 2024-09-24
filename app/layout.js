@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 
 export const metadata = {
-  metadataBase : new URL(process.env.HOST),
+  metadataBase : new URL(process.env.NEXT_PUBLIC_HOST),
   title: {
     default: "Unlock Business Growth with Expert SEO, Meta Ads, & Social Media",
     template: " %s | Krishika"
@@ -20,8 +20,8 @@ export const metadata = {
   openGraph: {
     title: "Krishika - Unlock Business Growth with Expert SEO, Meta Ads, & Social Media",
     type: "profile",
-    url: new URL(process.env.HOST),
-    images: [`${new URL(process.env.HOST)}/LOGOO.png`], 
+    url: new URL(process.env.NEXT_PUBLIC_HOST),
+    images: [`${new URL(process.env.NEXT_PUBLIC_HOST)}/LOGOO.png`], 
     description: "Drive your business forward with personalized SEO strategies, targeted Meta ads, and social media marketing. Reach your goals with proven methods for online success.",
     card: "summary_large_image",
     locale: "en_US",

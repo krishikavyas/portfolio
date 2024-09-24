@@ -7,7 +7,7 @@ import Projects from '@/components/Project/Projects'
 
 
 export const metadata = {
-  metadataBase : new URL(process.env.HOST),
+  metadataBase : new URL(process.env.NEXT_PUBLIC_HOST),
   title: "My Work | Digital Marketing Skills & Projects",
   description: "Explore the diverse digital marketing skills and projects of Krishika Vyas.",
   keywords: ["work", "digital marketing skills", "SEO", "Meta ads", "social media marketing", "marketing projects", "portfolio", "Krishika Vyas"],
@@ -16,8 +16,8 @@ export const metadata = {
   openGraph: {
     title: "My Work | Digital Marketing Skills & Projects",
     type: "profile",
-    url: new URL(process.env.HOST),
-    images: [`${new URL(process.env.HOST)}/LOGOO.png`], 
+    url: new URL(process.env.NEXT_PUBLIC_HOST),
+    images: [`${new URL(process.env.NEXT_PUBLIC_HOST)}/LOGOO.png`], 
     description: "Explore the diverse digital marketing skills and projects of Krishika Vyas.",
     card: "summary_large_image",
     locale: "en_US",
