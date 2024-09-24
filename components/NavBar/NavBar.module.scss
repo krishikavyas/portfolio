@@ -1,0 +1,87 @@
+.footerSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+ 
+    
+    .menu{
+        text-transform: uppercase;
+        cursor: pointer;
+        span{
+            vertical-align: middle;
+        }
+    }
+
+}
+
+
+.container{
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    inset: 0;
+    z-index: 9999999;
+    background-color: #fff;
+    .menuItems{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        list-style: none;
+        li{
+            transition: all 0.3s ease-in-out;
+            margin-bottom: 2.31rem;
+            font-weight: 500;
+
+            transform: translateX(100%);
+            opacity: 0;
+            pointer-events: none;
+            user-select: none;
+
+            a{
+                font-size: 6.25rem;
+                color: #c5c5c5;
+                &:hover{
+                    color: #000;
+                    transform: none;
+                }
+                span::before{
+                    bottom: 1.65rem;
+                    height: 2.3rem;
+                }
+            }
+
+        }
+        .active {
+            a{
+                color: #000;
+            }
+        }
+    }
+}
+
+.visible{
+    transform: translateY(0);
+    opacity: 1;
+}
+.hidden {
+    transform: translateY(-100%);
+    opacity: 0;
+    user-select: none;
+}
+
+@keyframes navAnimation {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+        pointer-events: all;
+    }
+}
+
+.animated {
+    animation: navAnimation 1s ease forwards;
+    animation-delay: 0.3s; 
+}

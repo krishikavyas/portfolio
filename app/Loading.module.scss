@@ -1,0 +1,38 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000; 
+
+  div {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white; 
+    margin: 0 8px;
+    opacity: 0.3;
+    animation: scaleBounce 1.5s ease-in-out infinite;
+  }
+  
+  div:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  div:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+}
+
+
+@keyframes scaleBounce {
+  0%, 100% {
+    transform: scale(0.5);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

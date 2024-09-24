@@ -1,0 +1,146 @@
+.blogpageSection {
+    margin: 1rem auto 3rem !important;
+    max-width: 1000px !important;
+    height: 100%;
+
+    .backbtnContent {
+        >a {
+            display: flex;
+            align-items: center;
+
+            svg {
+                padding-right: 5px;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .wrapper{
+        &:first-child{
+            flex-grow: 1;
+        }
+    }
+
+    >div {
+        display: flex;
+        gap: 2rem;
+        @media screen and (max-width: 768px) {
+            display: block;
+        }
+        .blogContent {
+            flex-grow: 1;
+            max-width: 700px !important;
+
+            .title {
+                font-size: 3rem;
+                margin-bottom: 1rem;
+            }
+
+            .bloginfo {
+                display: flex;
+                align-items: center;
+                margin-bottom: 1.5rem;
+
+
+                .bloguser {
+                    border: 2px solid #80dc45;
+                    border-radius: 50%;
+                    display: inline-block;
+                    height: 34px;
+
+
+                    img {
+                        width: 30px;
+                        display: inline-flex;
+                        padding: 0;
+                        border-radius: 50%;
+                        height: fit-content;
+
+                    }
+                }
+
+                .details {
+                    margin-left: .5rem;
+                    line-height: 1;
+
+                    p {
+                        span {
+                            color: #575252;
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .blogImg {
+            height: 24rem;
+            object-fit: cover;
+            margin: 2rem 0;
+            border: none;
+            border-radius: 0.5rem;
+        }
+
+        .content {
+            margin: 5rem 0;
+        }
+    }
+
+    .sidebar {
+        max-width: 300px;
+        padding: 20px;
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+        .toc {
+            position: sticky;
+            top: 5rem;
+    
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                color: #333;
+                border-bottom: 2px solid #e0e0e0;
+                padding-bottom: 5px;
+            }
+        }
+    
+        .tocList {
+            list-style: none;
+            padding-left: 0;
+    
+            .tocItem {
+                margin-bottom: 10px;
+                position: relative;
+                padding-left: 20px;
+    
+                &:before {
+                    content: "•";
+                    position: absolute;
+                    left: 0;
+                    font-size: 1.2rem;
+                    color: #0070f3; // Custom bullet color
+                    transition: color 0.3s ease-in-out;
+                }
+    
+                &:hover:before {
+                    color: #005bb5; // Bullet color on hover
+                }
+            }
+    
+            .tocLink {
+                text-decoration: none;
+                color: #0070f3;
+                font-weight: 500;
+                font-size: 1rem;
+                transition: all 0.3s ease-in-out;
+    
+                &:hover {
+                    color: #005bb5;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,32 @@
+.footerSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem auto;
+
+    p {
+        color: rgb(116, 116, 116);
+        font-family: "Lora", serif;
+        span{
+            color: rgb(43, 43, 43);
+        }
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        gap: 3rem;
+
+        li {
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+            font-size: 13px;
+            font-family: "Ubuntu", sans-serif;
+            color: rgb(43, 43, 43);
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+[
+    {
+        "title": "SEO Mastery: Elevating Your Online Presence",
+        "slug": "seo-mastery-elevating-online-presence",
+        "img": "/images/seo.png",
+        "priority": 1
+    },
+    {
+        "title": "Crafting Meta Ads That Drive Results",
+        "slug": "crafting-meta-ads-drive-results",
+        "img": "/images/metaads.png"
+    },
+    {
+        "title": "Designing Emails That Convert",
+        "slug": "designing-emails-that-convert",
+        "img": "/images/email.png"
+    },
+    {
+        "title": "Creating Content That Resonates",
+        "slug": "creating-content-that-resonates",
+        "img": "/images/contentwriting.png"
+    },
+    {
+        "title": "Building Strong Social Media Communities",
+        "slug": "building-strong-social-media-communities",
+        "img": "/images/smm.png"
+    },
+    {
+        "title": "Developing Effective Marketing Strategies",
+        "slug": "developing-effective-marketing-strategies",
+        "img": "/images/marketingStrategy.png"
+    }
+]

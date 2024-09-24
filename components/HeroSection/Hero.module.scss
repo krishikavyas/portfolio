@@ -1,0 +1,26 @@
+.container{
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+
+    h1{
+        font-size: 17vw;
+        margin-left: -1.3rem;
+    
+        span {
+          color: #fed9ca;
+        }
+    }   
+
+    div{
+        color: #f7f6f6;
+        position: absolute;
+        z-index: -1;
+        line-height: 100%;
+        font-size: 29vw;
+        font-weight: 700;
+        box-sizing: border-box;
+        inset: 0;
+    }
+}
+
+
