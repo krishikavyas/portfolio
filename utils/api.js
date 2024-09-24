@@ -1,7 +1,7 @@
 
 export async function getBlogs() {
     try {
-      const res = await fetch(`${process.env.HOST}/api/blog`, { cache: 'no-store' });
+      const res = await fetch(`/api/blog`, { cache: 'no-store' });
       if (!res.ok) {
         console.error('Failed to fetch data, status:', res.status);
         throw new Error('Failed to fetch blogs');

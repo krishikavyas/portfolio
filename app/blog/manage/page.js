@@ -6,7 +6,7 @@ import { notFound } from 'next/navigation';
 export const revalidate = 0
 
 async function fetchBlogs() {
-  const res = await fetch(`${process.env.HOST}/api/blog`, { cache: 'no-store' });
+  const res = await fetch(`/api/blog`, { cache: 'no-store' });
   if (!res.ok) {
     throw new Error('Failed to fetch blogs');
   }
@@ -14,7 +14,7 @@ async function fetchBlogs() {
 }
 
 async function fetchArchivedBlogs() {
-  const res = await fetch(`${process.env.HOST}/api/blog/archived`, { cache: 'no-store' });
+  const res = await fetch(`/api/blog/archived`, { cache: 'no-store' });
   if (!res.ok) {
     throw new Error('Failed to fetch archived blogs');
   }

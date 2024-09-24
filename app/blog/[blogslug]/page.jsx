@@ -18,7 +18,7 @@ const getData = async (slug) => {
     if(prevData) {
         return prevData.blogs
     }
-    const res = await fetch(`${process.env.HOST}/api/blog?id=${slug}`, {
+    const res = await fetch(`/api/blog?id=${slug}`, {
         next: { revalidate: 0 }
     });
 
