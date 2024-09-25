@@ -22,7 +22,10 @@ const getData = async (slug) => {
         next: { revalidate: 0 }
     });
 
-    if (!res.ok) throw new Error('Failed to fetch data');
+    if (!res.ok) {
+        const errorData = await res.text()
+        throw new Error(`Failed to fetch data: ${errorData}`);
+    } 
     prevData = await res.json()
     return prevData.blogs;
 };

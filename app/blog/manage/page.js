@@ -8,7 +8,8 @@ export const revalidate = 0
 async function fetchBlogs() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/blog`, { cache: 'no-store' });
   if (!res.ok) {
-    throw new Error('Failed to fetch blogs');
+    const errorData = await res.text()
+    throw new Error(`Failed to fetch blogs: ${errorData}`);
   }
   return res.json();
 }
@@ -16,7 +17,8 @@ async function fetchBlogs() {
 async function fetchArchivedBlogs() {
   const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/blog/archived`, { cache: 'no-store' });
   if (!res.ok) {
-    throw new Error('Failed to fetch archived blogs');
+    const errorData = await res.text()
+    throw new Error(`Failed to fetch archived blogs ${errorData}`);
   }
   return res.json();
 }
