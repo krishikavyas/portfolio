@@ -30,6 +30,7 @@ async function saveBase64Image(base64String, slug) {
 
 
   export async function POST(request) {
+    await connectToDatabase();
     try {
       // Parse JSON data from the request
       let { content, description, title, tags, slug, img, type = "SEO", seo, category} = await request.json();

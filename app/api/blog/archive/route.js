@@ -5,6 +5,7 @@ import { deleteImageFromCloudinary } from '@/lib/cloudinary';
 
 export async function POST(request) {
   try {
+    await connectToDatabase();
     const { slug } = await request.json();
 
     // Find the blog by slug
@@ -31,6 +32,7 @@ export async function POST(request) {
 
 export async function DELETE(request) {
   try {
+    await connectToDatabase();
     const { searchParams } = new URL(request.url);
     const slug = searchParams.get('slug');
 
@@ -62,6 +64,7 @@ export async function DELETE(request) {
 
 
 export async function GET() {
+  await connectToDatabase();
   try {
     // Find all archived blogs
     const archivedBlogs = await Blog.find({ isArchived: true });
