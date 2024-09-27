@@ -27,7 +27,7 @@ const data = [
     {
         "title": "Crafting Meta Ads That Drive Results",
         "slug": "crafting-meta-ads-drive-results",
-        "bannerImg": "/images/Meta-Ads-1.png",
+        "bannerImg": "/images/Meta ads (detail page).png",
         "sections": [
             {
                 
@@ -47,7 +47,7 @@ const data = [
     },
     {
         "title": "Designing Emails That Convert",
-        "bannerImg": "/images/Google.png",
+        "bannerImg": "/images/emaildeatilpageimage.png",
         "slug": "designing-emails-that-convert",
         "seo": {
             "desc": "The SFABF is a free annual multi-day exhibition and celebration of printed material from independent publishers, artists, designers, collectors, and enthusiasts from around the world. The fair places the unique history and perspectives of the Bay Area in conversation with national and international publishing communities. It’s held at Minnesota Street Project every summer. I design its visual identity for its 2023 event for a class project.",
@@ -101,7 +101,7 @@ const data = [
     {
         "title": "Building Strong Social Media Communities",
         "slug": "building-strong-social-media-communities",
-        "bannerImg": "/images/Google.png",
+        "bannerImg": "/images/socailmediadetailpage.png",
         "seo": {
             "desc": "This was a project completed during Nickelodeon + Adobe Creative Jam. The inspiration came from a game we loved to play when we were children. Three floating islands represent three main features of this app: learning and winning badges, showcasing the house, and visiting friends’ houses. The style is consistent with Nickelodeon’s brand style, which is vibrant, and playful. View the prototype here.",
             "keywords": ["nicklodeon", "project"]
@@ -127,7 +127,7 @@ const data = [
     {
         "title": "Developing Effective Marketing Strategies",
         "slug": "developing-effective-marketing-strategies",
-        "bannerImg": "/images/social-media.png",
+        "bannerImg": "/images/marketingstrategies.png",
         "seo": {
             "desc": "As part of the Airbnb + Adobe Creative Jam, we undertook a project that aimed to create immersive travel stories by combining photos and notes from shared trips. Although the initial version took us 24 hours to complete, we were not satisfied with the design and did not win the competition. My teammates and I were determined to refine our work. Through our efforts, we provided users with a platform to create engaging and captivating stories about the cultures and destinations they have experienced. View the prototype here.",
             "keywords": ["AirBnb Trip", "project", "Adobe XD"]

@@ -32,7 +32,7 @@ const getData = async (slug) => {
 
 function generateTOC(content) {
     const dom = new JSDOM(content);
-    const headers = Array.from(dom.window.document.querySelectorAll('h1, h2, h3'));
+    const headers = Array.from(dom.window.document.querySelectorAll('h2, h3, h4'));
     const tocItems = [];
 
     headers.forEach(header => {
@@ -74,14 +74,15 @@ export async function generateMetadata({ params: { blogslug } }) {
         },
         openGraph: {
             title: `Blog - ${seo.title || data.title}`,
-            type: "profile",
+            type: "article",
             url: new URL(`${process.env.NEXT_PUBLIC_HOST}/blog/${data.slug}`),
             images: [data.img], 
             description: seo?.description || data.description,
-            card: "summary_large_image",
+            card:[data.img],
             locale: "en_IN",
             siteName: "Krishika's Blog",
-            site:"@krishika"
+            site:"@krishika",
+            author: "krishika"
           },
     };
 }

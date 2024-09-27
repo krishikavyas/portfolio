@@ -31,9 +31,9 @@ export default async function Home() {
             <div className={styles.title}>Hello</div>
             <p>Hey, this is Krishika, a Passionate Digital Marketing Enthusiast with a flair for crafting digital success stories.</p>
           </div>
-          <div className={styles.imgSection}>
+          {/* <div className={styles.imgSection}>
             <Image src={img1} alt="img1" />
-          </div>
+          </div> */}
         </div>
         <Projects/>
         <div className={styles.likemyWork}>
