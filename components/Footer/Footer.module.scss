@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
     margin: 3rem auto;
+    flex-wrap: wrap;
+    gap: 2rem;
 
     p {
         color: rgb(116, 116, 116);
@@ -15,6 +17,7 @@
     ul {
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         gap: 3rem;
 
         li {

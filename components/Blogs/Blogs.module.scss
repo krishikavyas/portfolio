@@ -1,15 +1,13 @@
 .blogItems {
-    display: flex;
     justify-content: space-evenly;
-    gap: 2rem;
     padding: 2rem 0 5rem 0;
-    flex-wrap: wrap;
+    columns: 300px;
 
     .singleItem {
         width: 30%;
         cursor: pointer;
         background: #fff;
-        min-width: 344px;
+        min-width: min(344px, 100%);
 
         >div {
             .blogImg {

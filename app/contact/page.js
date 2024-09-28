@@ -2,10 +2,13 @@ import Hero from '@/components/HeroSection/Hero'
 import React from 'react'
 import style from "./contact.module.scss"
 import Form from './Form'
+import info from "../../assets/joneralInfo.json"
+
+const { email }  = info
 
 const data = [
     {title: "City", desc: "Mumbai"},
-    {title: "Email", desc: "krishikavyas0408@gmail.com"},
+    {title: "Email", desc: email},
 ]
 
 export const metadata = {

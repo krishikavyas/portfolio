@@ -3,8 +3,6 @@ import React from 'react'
 import style from './blogSlug.module.scss'
 import usericon from '../../../public/images/usericon1.png'
 import info from '../../../assets/joneralInfo.json'
-import axios from 'axios'
-import { notFound } from 'next/navigation'
 import { JSDOM } from 'jsdom';
 import GoBack from './GoBack'
 

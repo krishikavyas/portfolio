@@ -25,12 +25,12 @@ function NavItems() {
 
     return (
         <>
-            <div className={style.menu} onClick={() => setIsActive(p => !p)} > menu <span><TbMenu /></span> </div>
+            <div className={style.menu} onClick={() => { console.log("Clicked"); setIsActive(true)}} > menu <span><TbMenu /></span> </div>
             <div className={`${style.container} centerRing ${isActive ? style.visible : style.hidden}`}>
                 <div className='ccontainer'>
                     <div className={style.footerSection}>
                         <div><Image src={logo} />  </div>
-                        <div className={style.menu} onClick={() => setIsActive(p => !p)} > Close <span><IoMdClose /></span> </div>
+                        <div className={style.menu} onClick={() => { console.log("Clicked"); setIsActive(p => !p)}} > Close <span><IoMdClose /></span> </div>
                     </div>
                     <ul className={style.menuItems}>
                         {items.map(e => (

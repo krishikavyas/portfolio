@@ -57,10 +57,8 @@ async function saveBase64Image(base64String, slug) {
         }
       } 
   
-      console.log("BLOG SAVE CALELD PRE")
 
       const newBlog = new Blog(finalBlog);
-      console.log("BLOG SAVE CALELD")
       await newBlog.save();
   
       const url = new URL(`/blog/${slug}`, request.url);
@@ -74,14 +72,23 @@ async function saveBase64Image(base64String, slug) {
 
 
   export async function GET(req) {
+    console.log("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII")
     const isAdmin = req.headers.get('x-forwarded-verified') === 'true';
     const { searchParams } = new URL(req.url);
     const blogSlug = searchParams.get("id");
+    const forSiteMap = searchParams.get("forSiteMap");
   
     try {
       await connectToDatabase();
   
       let blogs, category;
+
+      if(forSiteMap) {
+        blogs = await Blog.find({ isArchived: false });
+        console.log("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII")
+        console.log({blogs})
+        return NextResponse.json(blogs)
+      }
       
       if (blogSlug) {
         const decodedSlug = decodeURIComponent(blogSlug);

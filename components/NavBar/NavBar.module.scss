@@ -31,14 +31,14 @@
             transition: all 0.3s ease-in-out;
             margin-bottom: 2.31rem;
             font-weight: 500;
-
+            text-wrap: nowrap;
             transform: translateX(100%);
             opacity: 0;
             pointer-events: none;
             user-select: none;
 
             a{
-                font-size: 6.25rem;
+                font-size: min(6.25rem, 20vw);
                 color: #c5c5c5;
                 &:hover{
                     color: #000;

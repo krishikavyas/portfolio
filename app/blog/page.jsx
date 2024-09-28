@@ -1,9 +1,5 @@
-import dynamic from 'next/dynamic';
 import style from './BlogPage.module.scss';
-import name from '../../assets/joneralInfo.json';
 import { notFound } from 'next/navigation';
-import Loader from '@/components/Loader/Loader';
-import Link from 'next/link';
 import { getBlogs } from '@/utils/api';
 import Blogs from '@/components/Blogs/Blogs';
 import Hero from '@/components/HeroSection/Hero';
@@ -11,9 +7,6 @@ import { IoSearch } from 'react-icons/io5';
 
 
 export const revalidate = 0
-
-
-
 
 export default async function Page() {
   let items = { blogs : [], category: []};
