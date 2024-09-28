@@ -6,6 +6,7 @@ import { getBlogs } from "@/utils/api";
 import Blogs from "@/components/Blogs/Blogs";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import info from "../assets/joneralInfo.json"
 
 
 
@@ -38,7 +39,7 @@ export default async function Home() {
         <Projects/>
         <div className={styles.likemyWork}>
           {/* <h2 className={styles.title}>Like my work? Want to have a good quality photographies?<br /> You can contact me now!</h2> */}
-          <a href="#" className={styles.contactBtn}>contact</a>
+          <a href={`mailto:${info.email}?subject=Inquiry about Marketing Work`} className={styles.contactBtn}>contact</a>
         </div>
         {items.blogs.length && <div className={styles.blogging}>
           <div className=" ccontainer">
