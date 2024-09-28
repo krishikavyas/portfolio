@@ -3,8 +3,8 @@
     position: relative;
 
     h1{
-        font-size: 17vw;
-        margin-left: -1.3rem;
+        font-size: clamp(5rem, 17vw, 17vw);
+        margin-left: -1.3vw;
     
         span {
           color: #fed9ca;
