@@ -1,14 +1,17 @@
 .blogItems {
+    display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem; /* Adjusts the space between the items */
     padding: 2rem 0 5rem 0;
-    columns: 300px;
 
     .singleItem {
-        width: 30%;
+        width: 30%; /* You can adjust the width based on your preference */
         cursor: pointer;
         background: #fff;
         min-width: min(344px, 100%);
-
+        display: flex;
+        flex-direction: column; 
         >div {
             .blogImg {
                 width: 100%;
