@@ -29,7 +29,7 @@ function NavItems() {
             <div className={`${style.container} centerRing ${isActive ? style.visible : style.hidden}`}>
                 <div className='ccontainer'>
                     <div className={style.footerSection} >
-                        <div><Image src={logo} />  </div>
+                        <div><Image src={logo} alt='KV Logo' />  </div>
                         <div className={style.menu} onClick={() => { console.log("Clicked"); setIsActive(p => !p)}} > Close <span><IoMdClose /></span> </div>
                     </div>
                     <ul className={style.menuItems}>

@@ -13,7 +13,11 @@ export const metadata = {
   keywords: ["work", "digital marketing skills", "SEO", "Meta ads", "social media marketing", "marketing projects", "portfolio", "Krishika Vyas"],
   author: "Krishika",
   robots: "index, follow",
+  alternates: {
+    canonical: `${new URL(process.env.NEXT_PUBLIC_HOST)}work`,
+  },
   openGraph: {
+    url: `${new URL(process.env.NEXT_PUBLIC_HOST)}work`,
     title: "My Work | Digital Marketing Skills & Projects",
     type: "profile",
     url: new URL(process.env.NEXT_PUBLIC_HOST),

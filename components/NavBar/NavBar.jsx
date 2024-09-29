@@ -9,7 +9,7 @@ import Link from 'next/link';
 function NavBar() {
   return (
     <div className={`${style.footerSection} ccontainer`}>
-      <Link href="/" ><Image src={logo} /> </Link> 
+      <Link href="/" ><Image src={logo} alt='KV Logo' /> </Link> 
       <NavItems/>
     </div>
   )

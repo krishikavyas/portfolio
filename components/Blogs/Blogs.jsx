@@ -7,13 +7,20 @@ import Link from 'next/link'
 const Blogs = ({items}) => {
     return (
         <div className={styles.blogItems}>
-            {items?.map(item => (
-                <Link href={`/blog/${item.slug}`} key={item.type} className={styles.singleItem}>
+            {items?.map((item, index) => {
+                const isPriority = index <= 3; 
+                return <Link href={`/blog/${item.slug}`} key={item.type} className={styles.singleItem}>
                     <div>
                         <div className={styles.blogImg}>
                             <div className='imgWrapper imgWithAspec' style={{height: "100%"}}>
-                                <Image style={{height: "100%"}}  priority={false} fill sizes='(max-width: 768px) 100vw, 1000px' loading='eager'
-                                    src={item.img} alt={`Image for ${item.img}`} 
+                                <Image 
+                                    priority={isPriority} 
+                                    loading={isPriority ? 'eager' : 'lazy'} 
+                                    style={{height: "100%"}}  
+                                    fill 
+                                    sizes='(max-width: 768px) 100vw, 1000px' 
+                                    src={item.img} 
+                                    alt={`Image for ${item.img}`} 
                                 />
                             </div>
                             <div className={styles.hoverItem}>{item.category}</div>
@@ -23,7 +30,7 @@ const Blogs = ({items}) => {
                         </div>
                     </div>
                 </Link>
-            ))}
+            })}
         </div>
     )
 }

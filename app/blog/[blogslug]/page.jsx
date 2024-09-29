@@ -70,6 +70,7 @@ export async function generateMetadata({ params: { blogslug } }) {
         alternates: {
             canonical: seo?.canonical ? `${process.env.NEXT_PUBLIC_HOST}/blog/${seo.canonical}` : `${process.env.NEXT_PUBLIC_HOST}/blog/${data.slug}`,
         },
+        robots: "index, follow",
         openGraph: {
             title: `Blog - ${seo.title || data.title}`,
             type: "article",
@@ -136,7 +137,7 @@ const Page = async ({ params: { blogslug } }) => {
                             <h2>Table of Contents</h2>
                             <ul className={style.tocList}>
                                 {tocItems.map((item) => (
-                                    <li key={item.id} className={style.tocItem} style={{ marginLeft: `${(item.level - 1) * 30}px` }}>
+                                    <li key={item.id} className={style.tocItem} style={{ marginLeft: `${(item.level - 1) * 20}px` }}>
                                         <a href={`#${item.id}`} className={style.tocLink}>
                                             {item.title}
                                         </a>

@@ -18,7 +18,11 @@ export const metadata = {
     keywords: ["contact", "get in touch", "digital marketing inquiries", "SEO questions", "Meta ads support", "social media marketing", "Krishika Vyas"],
     author: "Krishika",
     robots: "index, follow",
+    alternates: {
+        canonical: `${new URL(process.env.NEXT_PUBLIC_HOST)}contact`,
+    },
     openGraph: {
+      url: `${new URL(process.env.NEXT_PUBLIC_HOST)}contact`,
       title: "Contact Me | Get in Touch with Krishika Vyas",
       type: "profile",
       url: new URL(process.env.NEXT_PUBLIC_HOST),
