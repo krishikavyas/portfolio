@@ -3,7 +3,7 @@ import "./globals.css";
 import Footer from "@/components/Footer/Footer";
 import NavBar from "@/components/NavBar/NavBar";
 import { Toaster } from "react-hot-toast";
-import Script from "next/script";
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 const inter = Inter({ subsets: ["latin"] });
 export const metadata = {
@@ -35,27 +35,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-43H4YCPWGF"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-43H4YCPWGF', {
-              page_path: window.location.pathname,
-            });
-          `}
-        </Script>
-      </head>
       <body className={inter.className}>
         <Toaster position="top-center" reverseOrder={false} />
         <NavBar />
         {children}
         <Footer />
+        <GoogleAnalytics gaId="G-43H4YCPWGF" />
       </body>
     </html>
   );
