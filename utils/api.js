@@ -1,7 +1,11 @@
 
-export async function getBlogs() {
+export async function getBlogs(limit) {
+
+    const url = new URL(`${process.env.NEXT_PUBLIC_HOST}/api/blog`);
+    if (limit) url.searchParams.append('limit', limit); 
+
     try {
-      const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/blog`, { cache: 'no-store' });
+      const res = await fetch(url.toString(), { cache: 'no-store' });
       if (!res.ok) {
         const errorData = await res.text();
         console.error('Failed to fetch data :', errorData);

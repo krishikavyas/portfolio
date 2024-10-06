@@ -13,7 +13,7 @@ import Image from 'next/image';
 const items = [
     { title: "Home", href: "/" },
     { title: "About", href: "/about" },
-    { title: "Work", href: "/works" },
+    { title: "Work", href: "/work" },
     { title: "Journal", href: "/blog" },
     { title: "Contact", href: "/contact" },
 ]

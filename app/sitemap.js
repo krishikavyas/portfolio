@@ -10,7 +10,7 @@ export default async function sitemap() {
     const blogs = await Blog.find({ isArchived: false }, { slug: 1, date: 1})
     console.log({blogs})
     const blogRoutes = blogs.map(blog => ({
-        url: `${process.env.NEXT_PUBLIC_HOST}/blog/${blog.slug}`,
+        url: `${process.env.NEXT_PUBLIC_HOST}blog/${blog.slug}`,
         lastModified: new Date(blog.date),
         changeFrequency: 'weekly',
         priority: 0.7,
@@ -22,7 +22,7 @@ export default async function sitemap() {
         const slug = e.slug || e.title.replace(" ", "-")
 
         return {
-            url: `${process.env.NEXT_PUBLIC_HOST}/project/${slug}`,
+            url: `${process.env.NEXT_PUBLIC_HOST}project/${slug}`,
             lastModified: new Date(),
             changeFrequency: 'weekly',
             priority,
@@ -36,25 +36,25 @@ export default async function sitemap() {
           priority: 1,
         },
         {
-          url: `${process.env.NEXT_PUBLIC_HOST}/about`,
+          url: `${process.env.NEXT_PUBLIC_HOST}about`,
           lastModified: new Date(),
           changeFrequency: 'yearly',
           priority: 0.8,
         },
         {
-          url: `${process.env.NEXT_PUBLIC_HOST}/blog`,
+          url: `${process.env.NEXT_PUBLIC_HOST}blog`,
           lastModified: new Date(),
           changeFrequency: 'weekly',
           priority: 0.8,
         },
         {
-          url: `${process.env.NEXT_PUBLIC_HOST}/work`,
+          url: `${process.env.NEXT_PUBLIC_HOST}work`,
           lastModified: new Date(),
           changeFrequency: 'monthly',
           priority: 0.8,
         },
         {
-          url: `${process.env.NEXT_PUBLIC_HOST}/contact`,
+          url: `${process.env.NEXT_PUBLIC_HOST}contact`,
           lastModified: new Date(),
           changeFrequency: 'yearly',
           priority: 0.8,

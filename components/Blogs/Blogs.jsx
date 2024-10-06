@@ -9,7 +9,7 @@ const Blogs = ({items}) => {
         <div className={styles.blogItems}>
             {items?.map((item, index) => {
                 const isPriority = index <= 3; 
-                return <Link href={`/blog/${item.slug}`} key={item.type} className={styles.singleItem}>
+                return <Link href={`/blog/${item.slug}`} key={item.slug} className={styles.singleItem}>
                     <div>
                         <div className={styles.blogImg}>
                             <div className='imgWrapper imgWithAspec' style={{height: "100%"}}>

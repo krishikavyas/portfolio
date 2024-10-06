@@ -22,7 +22,9 @@ export default async function Page() {
 
   const data = {
     "Recent Posts": items.blogs.map(e => ({title: e.title, url: `/blog/${e.slug}`})),
-    "Categories": items.category.map(e => ({title: `${e.name} (${e.count})`, url: `?${e.name}`})),
+    // "Categories": items.category.map(e => ({title: `${e.name} (${e.count})`, url: `?${e.name}`})),
+    "Categories": items.category.map(e => ({title: `${e.name} (${e.count})`, url: `#`})),
+
 }
 
   return (
@@ -36,10 +38,10 @@ export default async function Page() {
                     </div>
                 </div>
                 <div className={style.searchSection}>
-                    <div className={style.search}>
+                    {/* <div className={style.search}>
                         <input type='text' placeholder='Type something to search' />
                         <span><IoSearch /></span>
-                    </div>
+                    </div> */}
                     {
                         Object.keys(data).map((e, i) => {
                             return (

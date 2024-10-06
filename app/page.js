@@ -16,7 +16,7 @@ export default async function Home() {
   let items = { blogs : [], category: []};
 
   try {
-    items = await getBlogs();
+    items = await getBlogs(3);
   } catch (error) {
     console.error('Error in getData:', error);
     return notFound(); // Return 404 if data fetching fails

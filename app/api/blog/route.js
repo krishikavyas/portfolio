@@ -77,6 +77,7 @@ async function saveBase64Image(base64String, slug) {
     const { searchParams } = new URL(req.url);
     const blogSlug = searchParams.get("id");
     const forSiteMap = searchParams.get("forSiteMap");
+    const limit = searchParams.get("limit");
   
     try {
       await connectToDatabase();
@@ -85,8 +86,6 @@ async function saveBase64Image(base64String, slug) {
 
       if(forSiteMap) {
         blogs = await Blog.find({ isArchived: false });
-        console.log("IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII")
-        console.log({blogs})
         return NextResponse.json(blogs)
       }
       
@@ -99,7 +98,8 @@ async function saveBase64Image(base64String, slug) {
   
         blogs = blog; 
       } else {
-        blogs = await Blog.find({ isArchived: false });
+        if (limit) blogs = await Blog.find({ isArchived: false }, { category: 1, slug: 1, img: 1, title: 1 }).sort({ date: -1 }).limit(parseInt(limit, 10));
+        else blogs = await Blog.find({ isArchived: false }, { category: 1, slug: 1, img: 1, title: 1 }).sort({ date: -1 });
         category = await Category.find();
       }
   
