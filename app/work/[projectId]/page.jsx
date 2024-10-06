@@ -93,8 +93,8 @@ export async function generateMetadata({params: {projectId}}) {
     openGraph: {
       title : title,
       description : desc,
-      images: [`/project/${projectId}/og/${projectId}.png`],
-      url : `/project/${projectId}`,
+      images: [`/work/${projectId}/og/${projectId}.png`],
+      url : `/work/${projectId}`,
       card: "summary_large_image",
       locale: "en_US",
       type: "article",
@@ -102,7 +102,7 @@ export async function generateMetadata({params: {projectId}}) {
       site:"@krishika"
     },
     alternates: {
-      canonical: `/project/${projectId}`
+      canonical: `/work/${projectId}`
     },
     keywords: keywords,
     author: "Krishika",

@@ -15,7 +15,7 @@ function Projects() {
                     {data.map((item, index) => {
                         const isPriority = index <= 3; 
                         return (
-                            <Link href={`/project/${item.slug}`} key={index} className={styles.imgcontent}>
+                            <Link href={`/work/${item.slug}`} key={index} className={styles.imgcontent}>
                                 <div className={`imgWrapper ${styles.catImg}`}>
                                     <Image
                                         priority={isPriority} 

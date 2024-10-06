@@ -53,7 +53,3 @@ export default async function Home() {
     </>
   );
 }
-
-
-
-// https://store.adveits.com/project/oxer/wp/demo/
