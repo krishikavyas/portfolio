@@ -4,6 +4,7 @@
     height: 100%;
 
     .backbtnContent {
+        margin: 1rem 0;
         >a {
             display: flex;
             align-items: center;
@@ -88,7 +89,6 @@
 
     .sidebar {
         max-width: 300px;
-        padding: 20px;
         @media screen and (max-width: 768px) {
             display: none;
         }

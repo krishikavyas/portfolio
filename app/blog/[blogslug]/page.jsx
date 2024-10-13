@@ -5,6 +5,7 @@ import usericon from '../../../public/images/usericon1.png'
 import info from '../../../assets/joneralInfo.json'
 import { JSDOM } from 'jsdom';
 import GoBack from './GoBack'
+import VerticalAds from '@/components/Adds/VerticalAds'
 
 const { firstname, lastname } = info
 
@@ -144,6 +145,7 @@ const Page = async ({ params: { blogslug } }) => {
                                     </li>
                                 ))}
                             </ul>
+                            <VerticalAds/>
                         </div>
                     </div>
                 </div>
