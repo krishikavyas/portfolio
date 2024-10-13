@@ -1,0 +1,20 @@
+{
+    "redirects": [
+      {
+        "source": "http://krishikavyas.site/",
+        "destination": "https://krishikavyas.site/",
+        "permanent": true
+      },
+      {
+        "source": "http://www.krishikavyas.site/",
+        "destination": "https://krishikavyas.site/",
+        "permanent": true
+      },
+      {
+        "source": "https://www.krishikavyas.site/",
+        "destination": "https://krishikavyas.site/",
+        "permanent": true
+      }
+    ]
+  }
+  
