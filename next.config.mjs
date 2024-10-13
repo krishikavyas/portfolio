@@ -17,6 +17,10 @@ const nextConfig = {
               type: 'host',
               value: 'krishikavyas.site',
             },
+            {
+              type: 'protocol',
+              value: 'http',
+            },
           ],
           destination: 'https://krishikavyas.site/:path*',
           permanent: true,
@@ -27,6 +31,10 @@ const nextConfig = {
             {
               type: 'host',
               value: 'www.krishikavyas.site',
+            },
+            {
+              type: 'protocol',
+              value: 'http',
             },
           ],
           destination: 'https://krishikavyas.site/:path*',
