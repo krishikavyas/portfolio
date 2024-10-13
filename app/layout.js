@@ -35,6 +35,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta name="google-adsense-account" content="ca-pub-5251887967635650"/>
+      </head>
       <body className={inter.className}>
         <Toaster position="top-center" reverseOrder={false} />
         <NavBar />
