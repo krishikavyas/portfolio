@@ -1,17 +1,24 @@
 {
     "redirects": [
       {
-        "source": "http://krishikavyas.site/",
+        "source": "/",
+        "has": [
+          {
+            "type": "host",
+            "value": "krishikavyas.site"
+          }
+        ],
         "destination": "https://krishikavyas.site/",
         "statusCode": 301
       },
       {
-        "source": "http://www.krishikavyas.site/",
-        "destination": "https://krishikavyas.site/",
-        "statusCode": 301
-      },
-      {
-        "source": "https://www.krishikavyas.site/",
+        "source": "/",
+        "has": [
+          {
+            "type": "host",
+            "value": "www.krishikavyas.site"
+          }
+        ],
         "destination": "https://krishikavyas.site/",
         "statusCode": 301
       }
