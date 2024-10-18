@@ -90,6 +90,8 @@ async function saveBase64Image(base64String, slug) {
       }
       
       if (blogSlug) {
+        console.log("IIIIIIIIIIIIIIIIIIIIIINNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN")
+        console.log({blogSlug})
         const decodedSlug = decodeURIComponent(blogSlug);
         const blog = await Blog.findOne({ slug: decodedSlug, isArchived: false });
         if (!blog) {
