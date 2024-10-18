@@ -9,26 +9,20 @@ import VerticalAds from '@/components/Adds/VerticalAds'
 
 const { firstname, lastname } = info
 
-export const revalidate = 0
+export const revalidate = 0;
 
-let prevData = null
 
 const getData = async (slug) => {
-    if(prevData) {
-        return prevData.blogs
-    }
-    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/blog?id=${slug}`, {
-        next: { revalidate: 0 }
-    });
+    const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/blog?id=${slug}`, { cache: 'no-store' });
 
-    
     if (!res.ok) {
-        const errorData = await res.text()
+        const errorData = await res.text();
         throw new Error(`Failed to fetch data: ${errorData}`);
-    } 
-    prevData = await res.json()
-    return prevData.blogs;
+    }
+    const data = await res.json();
+    return data.blogs;
 };
+
 
 function generateTOC(content) {
     const dom = new JSDOM(content);
