@@ -6,6 +6,8 @@ import info from '../../../assets/joneralInfo.json'
 import { JSDOM } from 'jsdom';
 import GoBack from './GoBack'
 import VerticalAds from '@/components/Adds/VerticalAds'
+import "quill/dist/quill.snow.css";
+
 
 const { firstname, lastname } = info
 
@@ -124,7 +126,7 @@ const Page = async ({ params: { blogslug } }) => {
                                 alt={`${data.title} image`} src={data.img} className={style.blogImg}
                             />
                         </div> */}
-                        <div className={`${style.content} blog-post`} dangerouslySetInnerHTML={{ __html: updatedContent }}>
+                        <div className={`ql-editor previewContent`} dangerouslySetInnerHTML={{ __html: updatedContent }}>
                         </div>
                     </div>
 

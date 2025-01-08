@@ -265,3 +265,7 @@ p{
 .rightRing {
   background-position: -50% 0;
 }
+
+.previewContent {
+  all: unset;  
+}

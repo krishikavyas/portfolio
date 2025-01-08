@@ -12,16 +12,19 @@ const CreateBlog = () => {
 
     const { quill, quillRef, Quill } = useQuill({
         modules: { blotFormatter: {} }
-      });
-    
-    
-      useEffect(() => {
+    });
+
+
+    useEffect(() => {
         if (quill) {
-          quill.on("text-change", () => {
-            setEditorState(quill.root.innerHTML)
-          });
+            quill.on("text-change", () => {
+                setEditorState(quill.root.innerHTML)
+            });
         }
-      }, [quill, Quill]);
+    }, [quill, Quill]);
+
+
+    console.log({ editorState })
 
     return (
         <>
@@ -35,23 +38,23 @@ const CreateBlog = () => {
                         value={editorState} 
                         onChange={setEditorState}  // Update editor state on change
                     /> */}
-                    <div ref={quillRef} className="wrapperClass"/>
+                    <div ref={quillRef} className="wrapperClass" />
                 </div>
                 <div className={styles.previewContainer}>
                     <div className={styles.title}>
                         <h2>Preview</h2>
                         <button onClick={() => setIsModalOpen(true)}>Publish</button>
                     </div>
-                    <div 
-                        className="blog-post" 
-                        dangerouslySetInnerHTML={{ __html: editorState }}  // Render editor content as HTML
-                    ></div>
+                    <div
+                        className={`ql-editor previewContent`}  
+                        dangerouslySetInnerHTML={{ __html: editorState }} 
+                    />
                 </div>
             </main>
-            <DetailModal 
-                onClose={() => setIsModalOpen(false)} 
-                isOpen={isModalOpen} 
-                getContent={editorState} 
+            <DetailModal
+                onClose={() => setIsModalOpen(false)}
+                isOpen={isModalOpen}
+                getContent={editorState}
             />
         </>
     );
