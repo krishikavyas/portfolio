@@ -2,6 +2,7 @@ import path from 'path';
 import { NextResponse } from 'next/server';
 import Blog from '@/models/Blog';
 import { deleteImageFromCloudinary } from '@/lib/cloudinary';
+import connectToDatabase from "@/lib/mongoose";
 
 export async function POST(request) {
   try {
