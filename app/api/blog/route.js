@@ -78,6 +78,8 @@ async function saveBase64Image(base64String, slug) {
     const blogSlug = searchParams.get("id");
     const forSiteMap = searchParams.get("forSiteMap");
     const limit = searchParams.get("limit");
+
+    console.log({blogSlug})
   
     try {
       await connectToDatabase();
@@ -88,6 +90,7 @@ async function saveBase64Image(base64String, slug) {
         blogs = await Blog.find({ isArchived: false });
         return NextResponse.json(blogs)
       }
+
       
       if (blogSlug) {
         console.log("IIIIIIIIIIIIIIIIIIIIIINNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN")
@@ -95,6 +98,7 @@ async function saveBase64Image(base64String, slug) {
         const decodedSlug = decodeURIComponent(blogSlug);
         const blog = await Blog.findOne({ slug: decodedSlug, isArchived: false });
         if (!blog) {
+          console.log("RETURNING ERRORRRRRRRRRRRRRRRRRR")
           return NextResponse.json({ status: 'error', message: 'No blog found with this slug' }, { status: 404 });
         }
   

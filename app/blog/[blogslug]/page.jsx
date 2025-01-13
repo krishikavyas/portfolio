@@ -7,6 +7,7 @@ import { JSDOM } from 'jsdom';
 import GoBack from './GoBack'
 import VerticalAds from '@/components/Adds/VerticalAds'
 import "quill/dist/quill.snow.css";
+import { notFound } from 'next/navigation'
 
 
 const { firstname, lastname } = info
@@ -16,7 +17,6 @@ export const revalidate = 0;
 
 const getData = async (slug) => {
     const res = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/blog?id=${slug}`, { cache: 'no-store' });
-
     if (!res.ok) {
         const errorData = await res.text();
         throw new Error(`Failed to fetch data: ${errorData}`);
