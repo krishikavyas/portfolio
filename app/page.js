@@ -45,7 +45,7 @@ export default async function Home() {
         <section className={`ccontainer ${styles.experience}`}>
           <div >
             <h2 className={styles.title}>My Experience</h2>
-            <h3 className={styles.subtitle}>Industries I've Worked With</h3>
+            <h3 className={styles.subtitle}>Industries I&apos;ve Worked With</h3>
             <ul className={styles.list}>
               {data.map((item, index) => (
                 <li key={index} className={styles.listItem}>

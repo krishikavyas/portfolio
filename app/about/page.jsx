@@ -54,8 +54,8 @@ function page() {
                     </Image>
                 </div> 
                 <div className={style.content}>
-                    <h4>I'm Krishika Vyas</h4>
-                    <p>I'm a digital marketer who loves helping brands connect with their audience. Over the past few years, I've worked on SEO, SEM, content marketing, and social media. I enjoy creating strategies that mix creative ideas with data to get real results. My focus is on helping brands find their voice and share it in a way that stands out. When I'm not working, I like to explore new places and read to keep my mind fresh and inspired.</p>
+                    <h4>I&apos;m Krishika Vyas</h4>
+                    <p>I&apos;m a digital marketer who loves helping brands connect with their audience. Over the past few years, I&apos;ve worked on SEO, SEM, content marketing, and social media. I enjoy creating strategies that mix creative ideas with data to get real results. My focus is on helping brands find their voice and share it in a way that stands out. When I&apos;m not working, I like to explore new places and read to keep my mind fresh and inspired.</p>
                 </div>
             </div>
         </section>
