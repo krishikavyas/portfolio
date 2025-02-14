@@ -3,6 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import Img from "../../public/assets/img1.jpeg"
 import style from "./About.module.scss"
+import ExperienceTimeline from '@/components/Experience/Experience'
 
 const data = [
     {title: "Trading : ", desc: "Enhancing visibility for financial trading platforms.",},
@@ -58,19 +59,9 @@ function page() {
                 </div>
             </div>
         </section>
-        <section className={style.experience}>
-            <h2 className='commonContent' >My <span>experience.</span></h2>
-            <h2 className='commonContent' ><span>Industries</span> I’ve Worked With</h2>
-
-            <div>
-                <ul className={style.list}>
-                    {data.map((item, index) => (
-                    <li key={index} className={style.listItem}>
-                        <strong>{item.title}</strong>{item.desc}
-                    </li>
-                    ))}
-                </ul>
-            </div>
+        <section className={style.experience} id="experience">
+            <h2 className='commonContent' >My <span>Exposure.</span></h2>
+            <ExperienceTimeline/>
         </section>
     </div>
   )

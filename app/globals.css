@@ -175,6 +175,7 @@ p{
 
 .commonContent span,
 .LinkStyle span {
+  isolation: isolate;
   position: relative;
   padding-left: 0.63rem;
   padding-right: 0.63rem;
@@ -268,4 +269,70 @@ p{
 
 .previewContent {
   all: unset;  
+}
+
+/* Fixes visibility issues */
+.vertical-timeline-element-content.is-hidden {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+.vertical-timeline-element-icon {
+  width: 50px !important;
+  height: 50px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 50%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.vertical-timeline-element-icon svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: static !important; 
+  margin-left: 0 !important;
+  margin-top: 0 !important;
+}
+
+/* Enhanced date visibility */
+.timeline-date {
+  color: #000000 !important;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Adjusted text spacing */
+.vertical-timeline-element-title {
+  font-size: 18px !important;
+  font-weight: bold !important;
+  margin-bottom: 4px !important;
+}
+
+.vertical-timeline-element-subtitle {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
+}
+
+/* Added box shadows for better visibility */
+.vertical-timeline-element-content {
+  padding: 20px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.vertical-timeline-element-content:hover {
+  transform: scale(1.02);
+}
+
+.vertical-timeline-element-date {
+  color: black !important ; 
+}
+.vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
+  visibility: visible !important;
 }
