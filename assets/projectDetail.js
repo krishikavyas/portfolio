@@ -14,13 +14,13 @@ const data = [
                 "desc": "With hands-on experience, I help businesses of all sizes boost their online visibility and drive organic traffic. My approach to SEO includes:",
                 "list": [
                     "In-Depth Keyword Research: I use advanced tools to uncover high-volume, low-competition keywords that match your business objectives. Through detailed analysis, I ensure your content resonates with your audience and search engines alike.",
-                    "On-Page Optimization: I fine-tune your title tags, meta descriptions, header tags, and overall content structure to ensure they’re fully optimized. My goal is to craft content that’s both valuable and search engine-friendly, naturally integrating relevant keywords.",
-                    "Technical SEO Audits & Fixes: I conduct comprehensive audits to identify any technical roadblocks affecting your website’s performance. From improving site speed to ensuring mobile responsiveness, I focus on creating a seamless user experience that boosts rankings.",
-                    "Strategic Link Building: I develop effective strategies to build high-quality backlinks from authoritative websites. By earning natural and relevant links, I help strengthen your website’s authority in search engine results.",
+                    "On-Page Optimization: I fine-tune your title tags, meta descriptions, header tags, and overall content structure to ensure they're fully optimized. My goal is to craft content that's both valuable and search engine-friendly, naturally integrating relevant keywords.",
+                    "Technical SEO Audits & Fixes: I conduct comprehensive audits to identify any technical roadblocks affecting your website's performance. From improving site speed to ensuring mobile responsiveness, I focus on creating a seamless user experience that boosts rankings.",
+                    "Strategic Link Building: I develop effective strategies to build high-quality backlinks from authoritative websites. By earning natural and relevant links, I help strengthen your website's authority in search engine results.",
                 ],
             },
             {
-                "desc": "Through my tailored SEO strategies, I’ve helped Businesses achieve top rankings and significantly grow their organic traffic. By staying updated on the latest trends, I ensure your website remains competitive in the ever-changing digital landscape."
+                "desc": "Through my tailored SEO strategies, I've helped Businesses achieve top rankings and significantly grow their organic traffic. By staying updated on the latest trends, I ensure your website remains competitive in the ever-changing digital landscape."
             },
         ]
     },
@@ -50,7 +50,7 @@ const data = [
         "bannerImg": "/images/emaildeatilpageimage.png",
         "slug": "designing-emails-that-convert",
         "seo": {
-            "desc": "The SFABF is a free annual multi-day exhibition and celebration of printed material from independent publishers, artists, designers, collectors, and enthusiasts from around the world. The fair places the unique history and perspectives of the Bay Area in conversation with national and international publishing communities. It’s held at Minnesota Street Project every summer. I design its visual identity for its 2023 event for a class project.",
+            "desc": "The SFABF is a free annual multi-day exhibition and celebration of printed material from independent publishers, artists, designers, collectors, and enthusiasts from around the world. The fair places the unique history and perspectives of the Bay Area in conversation with national and international publishing communities. It's held at Minnesota Street Project every summer. I design its visual identity for its 2023 event for a class project.",
             "keywords": ["Holachef", "project", "InDesign", "Photoshop", "Illustrator", "Figma"]
         },
         "sections": [
@@ -60,14 +60,14 @@ const data = [
                 "list": [
                     "Custom Email Templates: I design responsive email templates that align with your brand and deliver a great user experience across all devices.",
                     "Compelling Copy: I write persuasive email copy that motivates readers to take action, from opening the email to clicking through.",
-                    "Personalized Content: By segmenting your email list, I deliver personalized content that speaks directly to each subscriber’s preferences and behavior.",
+                    "Personalized Content: By segmenting your email list, I deliver personalized content that speaks directly to each subscriber's preferences and behavior.",
                     "Testing for Optimization: I use A/B testing to continuously improve subject lines, body content, and calls-to-action, ensuring every campaign is optimized for maximum performance.",
                     "Deliverability Focus: I ensure your emails land in inboxes by addressing common deliverability issues, like avoiding spam filters and minimizing bounce rates."
                 
                 ],
             },
             {
-                "desc": "With my Experience in email design, copywriting, and optimization, I’ve helped businesses increase open rates, click-throughs, and ultimately, conversions."
+                "desc": "With my Experience in email design, copywriting, and optimization, I've helped businesses increase open rates, click-throughs, and ultimately, conversions."
             }
         ]
     },
@@ -88,7 +88,7 @@ const data = [
                     "Crafting Engaging Stories: I write content that not only informs but also captivates, using storytelling techniques to engage readers and create emotional connections with your brand.",
                     "SEO-Friendly Writing: I incorporate relevant keywords naturally and strategically to improve search engine visibility, while ensuring the content remains easy to read and engaging for the audience.",
                     "Content Writing Skills: I have a strong command of various writing styles, from blogs and articles to social media posts, emails, and website copy. I adapt my tone and language to fit the platform and the target audience.",
-                    "Copywriting for Conversion: I craft persuasive copy that motivates readers to take action, whether it’s signing up for a newsletter, making a purchase, or following a call-to-action.",
+                    "Copywriting for Conversion: I craft persuasive copy that motivates readers to take action, whether it's signing up for a newsletter, making a purchase, or following a call-to-action.",
                     "Content Calendar Management: I create and manage content calendars to ensure a consistent and timely flow of content that aligns with your marketing goals and engages your audience."
                 ]
             },
@@ -103,7 +103,7 @@ const data = [
         "slug": "building-strong-social-media-communities",
         "bannerImg": "/images/socailmediadetailpage.png",
         "seo": {
-            "desc": "This was a project completed during Nickelodeon + Adobe Creative Jam. The inspiration came from a game we loved to play when we were children. Three floating islands represent three main features of this app: learning and winning badges, showcasing the house, and visiting friends’ houses. The style is consistent with Nickelodeon’s brand style, which is vibrant, and playful. View the prototype here.",
+            "desc": "This was a project completed during Nickelodeon + Adobe Creative Jam. The inspiration came from a game we loved to play when we were children. Three floating islands represent three main features of this app: learning and winning badges, showcasing the house, and visiting friends' houses. The style is consistent with Nickelodeon's brand style, which is vibrant, and playful. View the prototype here.",
             "keywords": ["nicklodeon", "project"]
         },
         "sections": [
@@ -113,7 +113,7 @@ const data = [
                 "desc": "I help brands develop social media strategies that foster genuine connections with their audience and drive growth. My process include:",
                 "list": [
                     "Platform Selection: I help you choose the most effective social media platforms based on your audience and business goals.",
-                    "Creating Engaging Content: I develop visually appealing, shareable content that reflects your brand’s personality and engages your followers.",
+                    "Creating Engaging Content: I develop visually appealing, shareable content that reflects your brand's personality and engages your followers.",
                     "Community Engagement: I build and nurture your social media communities by actively engaging with followers and responding to comments and messages.",
                     "Analytics & Strategy Refinement: I track the success of your campaigns through data analysis, making informed adjustments to optimize your strategy and achieve your goals."
                 ]

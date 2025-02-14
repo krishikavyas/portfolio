@@ -1,5 +1,4 @@
 import React from 'react'
-import { TbMenu } from "react-icons/tb";
 import style from './NavBar.module.scss'
 import NavItems from './NavItems';
 import logo from "@/public/LOGOO.png"

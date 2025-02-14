@@ -1,13 +1,10 @@
-import Image from "next/image";
 import styles from "./page.module.scss";
-import img1 from '../public/assets/01_img.jpg'
 import Projects from "@/components/Project/Projects";
 import { getBlogs } from "@/utils/api";
 import Blogs from "@/components/Blogs/Blogs";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import info from "../assets/joneralInfo.json"
-import Experience from "@/components/Experience/Experience";
 
 const data = [
   { title: "Trading : ", desc: "Enhancing visibility for financial trading platforms.", },
