@@ -25,7 +25,6 @@ export default async function Home() {
     items = await getBlogs(3);
   } catch (error) {
     console.error('Error in getData:', error);
-    return notFound(); // Return 404 if data fetching fails
   }
 
   return (
